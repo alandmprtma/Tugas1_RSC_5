@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc libDrone.a CMakeFiles/Drone.dir/src/Modules/Drone.cpp.obj
+C:\msys64\ucrt64\bin\ranlib.exe libDrone.a
