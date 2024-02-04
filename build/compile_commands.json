@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\Console.dir\\src\\Modules\\Console.cpp.obj -c \"C:\\Users\\karol\\OneDrive - Institut Teknologi Bandung\\Stuffs\\Aksantara\\Repositories\\Tugas1_RSC_5\\src\\Modules\\Console.cpp\"",
+  "file": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/Modules/Console.cpp",
+  "output": "CMakeFiles/Console.dir/src/Modules/Console.cpp.obj"
+},
+{
+  "directory": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\Drone.dir\\src\\Modules\\Drone.cpp.obj -c \"C:\\Users\\karol\\OneDrive - Institut Teknologi Bandung\\Stuffs\\Aksantara\\Repositories\\Tugas1_RSC_5\\src\\Modules\\Drone.cpp\"",
+  "file": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/Modules/Drone.cpp",
+  "output": "CMakeFiles/Drone.dir/src/Modules/Drone.cpp.obj"
+},
+{
+  "directory": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\Map.dir\\src\\Modules\\Map.cpp.obj -c \"C:\\Users\\karol\\OneDrive - Institut Teknologi Bandung\\Stuffs\\Aksantara\\Repositories\\Tugas1_RSC_5\\src\\Modules\\Map.cpp\"",
+  "file": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/Modules/Map.cpp",
+  "output": "CMakeFiles/Map.dir/src/Modules/Map.cpp.obj"
+},
+{
+  "directory": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c \"C:\\Users\\karol\\OneDrive - Institut Teknologi Bandung\\Stuffs\\Aksantara\\Repositories\\Tugas1_RSC_5\\src\\main.cpp\"",
+  "file": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/main.cpp",
+  "output": "CMakeFiles/main.dir/src/main.cpp.obj"
+}
+]
