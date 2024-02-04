@@ -3,7 +3,9 @@
 
 #include <iostream>
 #include <vector>
+
 using namespace std;
+
 class Map {
     private:
         vector<vector<char>> data;
