@@ -56,3 +56,4 @@ void Map::moveLeft() {
         cout << "You cant move the drone off the map" << endl;
     }
 }
+
