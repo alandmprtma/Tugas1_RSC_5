@@ -86,6 +86,6 @@ void Drone::moveDown(){
 }
 
 void Drone::rechargeBattery(){
-    battery = 100;
-    std::cout << "Battery Recharged"<< std::endl;
+    battery = 10;
+    std::cout << "Battery Recharged"<< std::endl;
 }
