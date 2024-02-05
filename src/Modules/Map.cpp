@@ -4,6 +4,9 @@ Map::Map() : data(5, vector<char>(5, '-')), Drone{0, 0} {
         data[0][0] = 'D';
     }
 
+Map::~Map() {
+}
+
 void Map::printMap() {
     for (int i = 0; i < 5; ++i) {
         for (int j = 0; j < 5; ++j) {
