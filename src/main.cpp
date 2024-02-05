@@ -2,6 +2,14 @@
 #include <Console.h>
 #include <Drone.h>
 
+using namespace std;
+
+void showPose(Drone drone)
+{
+    cout << "x: " << drone.getXPos() << " y: " << drone.getYPos() << endl;
+}
+
 int main(int, char**){
-    std::cout << "Hello, from TUGAS1_RSC_5!\n";
+    Drone drone = Drone(2, 3);
+    showPose(drone);
 }

@@ -1,4 +1,5 @@
 #include "Map.h"
+#include <Drone.h>
 
 Map::Map() : data(5, vector<char>(5, '-')), Drone{0, 0} {
         data[0][0] = 'D';

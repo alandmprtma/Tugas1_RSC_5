@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "libDrone.a"
+			"path" : "libConsole.a"
 		}
 	],
 	"backtrace" : 1,
@@ -11,7 +11,8 @@
 	{
 		"commands" : 
 		[
-			"add_library"
+			"add_library",
+			"target_link_libraries"
 		],
 		"files" : 
 		[
@@ -25,7 +26,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 29,
 				"parent" : 0
 			}
 		]
@@ -46,9 +53,20 @@
 			]
 		}
 	],
-	"id" : "Drone::@6890427a1f51a3e7e1df",
-	"name" : "Drone",
-	"nameOnDisk" : "libDrone.a",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "Map::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Drone::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "Console::@6890427a1f51a3e7e1df",
+	"name" : "Console",
+	"nameOnDisk" : "libConsole.a",
 	"paths" : 
 	{
 		"build" : ".",
@@ -76,12 +94,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/Modules/Drone.cpp",
+			"path" : "src/Modules/Console.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/Modules/Drone.h",
+			"path" : "src/Modules/Console.h",
 			"sourceGroupIndex" : 1
 		}
 	],

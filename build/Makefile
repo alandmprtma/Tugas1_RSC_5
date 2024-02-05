@@ -510,19 +510,6 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named Console
-
-# Build rule for target.
-Console: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Console
-.PHONY : Console
-
-# fast build rule for target.
-Console/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Console.dir\build.make CMakeFiles/Console.dir/build
-.PHONY : Console/fast
-
-#=============================================================================
 # Target rules for targets named Drone
 
 # Build rule for target.
@@ -547,6 +534,19 @@ Map: cmake_check_build_system
 Map/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Map.dir\build.make CMakeFiles/Map.dir/build
 .PHONY : Map/fast
+
+#=============================================================================
+# Target rules for targets named Console
+
+# Build rule for target.
+Console: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Console
+.PHONY : Console
+
+# fast build rule for target.
+Console/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Console.dir\build.make CMakeFiles/Console.dir/build
+.PHONY : Console/fast
 
 #=============================================================================
 # Target rules for targets named main

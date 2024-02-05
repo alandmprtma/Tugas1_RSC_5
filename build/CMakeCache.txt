@@ -299,6 +299,9 @@ CTEST_SUBMIT_RETRY_COUNT:STRING=3
 //How long to wait between timed-out CTest submissions.
 CTEST_SUBMIT_RETRY_DELAY:STRING=5
 
+//Dependencies for the target
+Console_LIB_DEPENDS:STATIC=general;Map;
+
 //Maximum time allowed before CTest will kill the test.
 DART_TESTING_TIMEOUT:STRING=1500
 
@@ -313,6 +316,9 @@ MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
 
 //File that contains suppressions for the memory checker
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
+
+//Dependencies for the target
+Map_LIB_DEPENDS:STATIC=general;Drone;
 
 //Name of the computer/site where compile is being run
 SITE:STRING=Karol

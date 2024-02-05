@@ -1618,6 +1618,18 @@
 			"value" : ""
 		},
 		{
+			"name" : "Console_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;Map;"
+		},
+		{
 			"name" : "DART_TESTING_TIMEOUT",
 			"properties" : 
 			[
@@ -1712,6 +1724,18 @@
 			],
 			"type" : "FILEPATH",
 			"value" : ""
+		},
+		{
+			"name" : "Map_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;Drone;"
 		},
 		{
 			"name" : "P4COMMAND",

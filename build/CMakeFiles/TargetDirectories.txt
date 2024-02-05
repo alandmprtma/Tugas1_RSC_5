@@ -26,9 +26,9 @@ C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositori
 C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/ContinuousCoverage.dir
 C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/ContinuousMemCheck.dir
 C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/ContinuousSubmit.dir
-C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/Console.dir
 C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/Drone.dir
 C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/Map.dir
+C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/Console.dir
 C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/main.dir
 C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/package.dir
 C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/package_source.dir

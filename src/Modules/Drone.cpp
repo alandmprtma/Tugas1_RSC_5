@@ -1,6 +1,7 @@
 #include "Drone.h"
 #include <iostream>
 #include <string>
+
 Drone::Drone(int x_pos, int y_pos)
     :x{x_pos}, y{y_pos}, battery{5}, onLand{true} 
     {}

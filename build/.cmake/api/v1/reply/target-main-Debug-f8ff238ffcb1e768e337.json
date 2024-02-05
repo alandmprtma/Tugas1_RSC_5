@@ -28,19 +28,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 25,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 27,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 28,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
@@ -70,15 +70,15 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 4,
+			"backtrace" : 3,
 			"id" : "Map::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 3,
 			"id" : "Console::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 3,
+			"backtrace" : 2,
 			"id" : "Drone::@6890427a1f51a3e7e1df"
 		}
 	],
@@ -97,17 +97,22 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "libConsole.a",
+				"fragment" : "libDrone.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "libDrone.a",
+				"fragment" : "libConsole.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
 				"fragment" : "libMap.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libDrone.a",
 				"role" : "libraries"
 			},
 			{
