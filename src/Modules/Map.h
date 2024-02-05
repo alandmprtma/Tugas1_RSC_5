@@ -10,7 +10,6 @@ class Map {
     private:
         vector<vector<char>> data;
         vector<int> Drone;
-
     public:
         // constructor
         Map();
@@ -18,11 +17,17 @@ class Map {
         // destructor
         ~Map();
 
-        // Movement function
+        // Map Print
         void printMap();
+
+        // movement function
         void moveForward();
         void moveRight();
         void moveBackward();
         void moveLeft();
+
+        // getter location (X,Y)
+        int getLocationX();
+        int getLocationY();
 };
 #endif
