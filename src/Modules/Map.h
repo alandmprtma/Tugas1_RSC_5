@@ -12,7 +12,13 @@ class Map {
         vector<int> Drone;
 
     public:
+        // constructor
         Map();
+
+        // destructor
+        ~Map();
+
+        // Movement function
         void printMap();
         void moveForward();
         void moveRight();
