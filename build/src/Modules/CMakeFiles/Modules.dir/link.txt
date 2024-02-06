@@ -1,2 +1,0 @@
-C:\mingw64\bin\ar.exe qc ..\..\lib\libModules.a CMakeFiles/Modules.dir/Console.cpp.obj CMakeFiles/Modules.dir/Drone.cpp.obj CMakeFiles/Modules.dir/Map.cpp.obj
-C:\mingw64\bin\ranlib.exe ..\..\lib\libModules.a

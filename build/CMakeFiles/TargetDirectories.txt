@@ -1,8 +1,0 @@
-C:/Users/r0ckt/Developments/RSC/Tugas1_RSC_5/build/CMakeFiles/edit_cache.dir
-C:/Users/r0ckt/Developments/RSC/Tugas1_RSC_5/build/CMakeFiles/rebuild_cache.dir
-C:/Users/r0ckt/Developments/RSC/Tugas1_RSC_5/build/src/CMakeFiles/drone.dir
-C:/Users/r0ckt/Developments/RSC/Tugas1_RSC_5/build/src/CMakeFiles/edit_cache.dir
-C:/Users/r0ckt/Developments/RSC/Tugas1_RSC_5/build/src/CMakeFiles/rebuild_cache.dir
-C:/Users/r0ckt/Developments/RSC/Tugas1_RSC_5/build/src/Modules/CMakeFiles/Modules.dir
-C:/Users/r0ckt/Developments/RSC/Tugas1_RSC_5/build/src/Modules/CMakeFiles/edit_cache.dir
-C:/Users/r0ckt/Developments/RSC/Tugas1_RSC_5/build/src/Modules/CMakeFiles/rebuild_cache.dir
