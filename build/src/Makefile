@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build\CMakeFiles C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build\CMakeFiles C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build\src\\CMakeFiles\progress.marks
+	cd /d C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,44 +102,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named drone
+# Convenience name for target.
+src/CMakeFiles/drone.dir/rule:
+	cd /d C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/drone.dir/rule
+.PHONY : src/CMakeFiles/drone.dir/rule
 
-# Build rule for target.
-drone: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 drone
+# Convenience name for target.
+drone: src/CMakeFiles/drone.dir/rule
 .PHONY : drone
 
 # fast build rule for target.
 drone/fast:
-	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\drone.dir\build.make src/CMakeFiles/drone.dir/build
+	cd /d C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\drone.dir\build.make src/CMakeFiles/drone.dir/build
 .PHONY : drone/fast
 
-#=============================================================================
-# Target rules for targets named Modules
+main.obj: main.cpp.obj
+.PHONY : main.obj
 
-# Build rule for target.
-Modules: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Modules
-.PHONY : Modules
+# target to build an object file
+main.cpp.obj:
+	cd /d C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\drone.dir\build.make src/CMakeFiles/drone.dir/main.cpp.obj
+.PHONY : main.cpp.obj
 
-# fast build rule for target.
-Modules/fast:
-	$(MAKE) $(MAKESILENT) -f src\Modules\CMakeFiles\Modules.dir\build.make src/Modules/CMakeFiles/Modules.dir/build
-.PHONY : Modules/fast
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /d C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\drone.dir\build.make src/CMakeFiles/drone.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /d C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\drone.dir\build.make src/CMakeFiles/drone.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -149,8 +161,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Modules
 	@echo ... drone
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 
@@ -162,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\r0ckt\Developments\RSC\Tugas1_RSC_5\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
