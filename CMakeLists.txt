@@ -5,30 +5,15 @@ include(CTest)
 enable_testing()
 
 
-add_library(
-    Drone
-    src/Modules/Drone.cpp
-    src/Modules/Drone.h
-    )
-    
-add_library(
-    Map
-    src/Modules/Map.cpp
-    src/Modules/Map.h
-    )
-    
-add_library(
-    Console
-    src/Modules/Console.cpp
-    src/Modules/Console.h
+include_directories(src/Modules/include)
+set(SRC_FILES
+    ${PROJECT_SOURCE_DIR}/src/Modules/src/Map.cpp
+    ${PROJECT_SOURCE_DIR}/src/Modules/src/Drone.cpp
+    ${PROJECT_SOURCE_DIR}/src/Modules/src/Console.cpp
+    ${PROJECT_SOURCE_DIR}/src/main.cpp
 )
 
-add_executable(main src/main.cpp)
-        
-target_link_libraries(Map PRIVATE Drone)
-target_link_libraries(Console PRIVATE Map)
-target_link_libraries(main PRIVATE Drone)
-target_link_libraries(main PRIVATE Console)
+add_executable(main ${SRC_FILES})
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

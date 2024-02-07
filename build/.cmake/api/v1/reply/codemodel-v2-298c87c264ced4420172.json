@@ -43,10 +43,7 @@
 						25,
 						26,
 						27,
-						28,
-						29,
-						30,
-						31
+						28
 					]
 				}
 			],
@@ -89,22 +86,12 @@
 						25,
 						26,
 						27,
-						28,
-						29,
-						30,
-						31
+						28
 					]
 				}
 			],
 			"targets" : 
 			[
-				{
-					"directoryIndex" : 0,
-					"id" : "Console::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Console-Debug-28cde02c39307176a91b.json",
-					"name" : "Console",
-					"projectIndex" : 0
-				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Continuous::@6890427a1f51a3e7e1df",
@@ -170,13 +157,6 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "Drone::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Drone-Debug-cd3e1db76a8f21d1cddc.json",
-					"name" : "Drone",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
 					"id" : "Experimental::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Experimental-Debug-5290bc076cd2d600449b.json",
 					"name" : "Experimental",
@@ -236,13 +216,6 @@
 					"id" : "ExperimentalUpdate::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-ExperimentalUpdate-Debug-cd17e68d94c51653532a.json",
 					"name" : "ExperimentalUpdate",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "Map::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Map-Debug-4db354fc16d81167cc3f.json",
-					"name" : "Map",
 					"projectIndex" : 0
 				},
 				{
@@ -318,7 +291,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main-Debug-b667fb1211d295cb74d2.json",
+					"jsonFile" : "target-main-Debug-0280c03399d0f2ce6664.json",
 					"name" : "main",
 					"projectIndex" : 0
 				}

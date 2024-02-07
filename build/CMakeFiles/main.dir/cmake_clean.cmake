@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj"
+  "CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj.d"
+  "CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj"
+  "CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj.d"
+  "CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj"
+  "CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj.d"
   "CMakeFiles/main.dir/src/main.cpp.obj"
   "CMakeFiles/main.dir/src/main.cpp.obj.d"
   "libmain.dll.a"
