@@ -14,7 +14,6 @@ Drone::~Drone() {}
 
 
 //Get Methods
-
 int Drone::getXPos() const {return x;}
 int Drone::getYPos() const {return y;}
 int Drone::getBatteryLevel() const {return battery;}

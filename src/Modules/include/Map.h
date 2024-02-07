@@ -10,9 +10,11 @@ using namespace std;
 class Map {
     private:
         vector<vector<char>> data;
-        vector<int> Drone;
+        vector<int> pose;
+        Drone drone;
     public:
         // constructor
+        Map(Drone drone);
         Map();
 
         // destructor

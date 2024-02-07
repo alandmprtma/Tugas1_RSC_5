@@ -342,4 +342,5 @@ CMakeFiles/main.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/vector.tcc \
  C:/Users/karol/ONEDRI~1/Stuffs/AKSANT~1/REPOSI~1/TUGAS1~2/src/Modules/include/Drone.h \
- C:/Users/karol/ONEDRI~1/Stuffs/AKSANT~1/REPOSI~1/TUGAS1~2/src/Modules/include/Drone.h
+ C:/Users/karol/ONEDRI~1/Stuffs/AKSANT~1/REPOSI~1/TUGAS1~2/src/Modules/include/Drone.h \
+ C:/Users/karol/ONEDRI~1/Stuffs/AKSANT~1/REPOSI~1/TUGAS1~2/src/Modules/include/Map.h

@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <windows.h>
+#include <conio.h>
 #include "Map.h"
 
 using namespace std;
@@ -10,10 +11,22 @@ using namespace std;
 class Console
 {
 private:
-    // data
+    Map map;
+    const string commands[5];
+
 public:
-    Console(/* args */);
+    // Constructor
+    Console(Map map);
+    Console();
+
+    // Destructor
     ~Console();
+
+    // Methods
+    void run();
+    void quit(); 
+    
+    
 };
 
 
