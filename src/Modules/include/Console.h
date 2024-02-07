@@ -2,8 +2,7 @@
 #define CONSOLE_H
 
 #include <iostream>
-#include <windows.h>
-#include <conio.h>
+#include <vector>
 #include "Map.h"
 
 using namespace std;
@@ -12,9 +11,10 @@ class Console
 {
 private:
     Map map;
-    const string commands[5];
 
 public:
+    static vector<string> commands;
+
     // Constructor
     Console(Map map);
     Console();
@@ -23,10 +23,8 @@ public:
     ~Console();
 
     // Methods
+    void showCommands();
     void run();
-    void quit(); 
-    
-    
 };
 
 

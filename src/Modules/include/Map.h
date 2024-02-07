@@ -10,7 +10,7 @@ using namespace std;
 class Map {
     private:
         vector<vector<char>> data;
-        vector<int> pose;
+        vector<vector<char>> base;
         Drone drone;
     public:
         // constructor
@@ -22,15 +22,29 @@ class Map {
 
         // Map Print
         void printMap();
+        void printBase();
 
-        // movement function
-        void moveForward();
+        // Reset data
+        void reset();
+
+        // Refresh data
+        void refresh();
+
+        // Movement function
+        void moveUp();
         void moveRight();
-        void moveBackward();
+        void moveDown();
         void moveLeft();
+
+        // Get Drone
+        Drone getDrone();
+
+        // Mount drone
+        void mountDrone(Drone drone);
 
         // getter location (X,Y)
         int getLocationX();
         int getLocationY();
+
 };
 #endif

@@ -20,7 +20,6 @@ public:
     ~Drone();
 
 //Get Methods
-
 int getXPos() const;
 int getYPos() const;
 int getBatteryLevel() const;
@@ -28,11 +27,13 @@ bool getLandingStatus() const;
 
 //Methods
 void takeOff();
+void landing();
 void moveUp();
 void moveRight();
 void moveLeft();
 void moveDown();
 void rechargeBattery();
+void showPose();
 
 };
 
