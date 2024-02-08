@@ -510,45 +510,6 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named Drone
-
-# Build rule for target.
-Drone: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Drone
-.PHONY : Drone
-
-# fast build rule for target.
-Drone/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Drone.dir\build.make CMakeFiles/Drone.dir/build
-.PHONY : Drone/fast
-
-#=============================================================================
-# Target rules for targets named Map
-
-# Build rule for target.
-Map: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Map
-.PHONY : Map
-
-# fast build rule for target.
-Map/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Map.dir\build.make CMakeFiles/Map.dir/build
-.PHONY : Map/fast
-
-#=============================================================================
-# Target rules for targets named Console
-
-# Build rule for target.
-Console: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Console
-.PHONY : Console
-
-# fast build rule for target.
-Console/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Console.dir\build.make CMakeFiles/Console.dir/build
-.PHONY : Console/fast
-
-#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -561,77 +522,77 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-src/Modules/Console.obj: src/Modules/Console.cpp.obj
-.PHONY : src/Modules/Console.obj
+src/Modules/src/Console.obj: src/Modules/src/Console.cpp.obj
+.PHONY : src/Modules/src/Console.obj
 
 # target to build an object file
-src/Modules/Console.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Console.dir\build.make CMakeFiles/Console.dir/src/Modules/Console.cpp.obj
-.PHONY : src/Modules/Console.cpp.obj
+src/Modules/src/Console.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj
+.PHONY : src/Modules/src/Console.cpp.obj
 
-src/Modules/Console.i: src/Modules/Console.cpp.i
-.PHONY : src/Modules/Console.i
+src/Modules/src/Console.i: src/Modules/src/Console.cpp.i
+.PHONY : src/Modules/src/Console.i
 
 # target to preprocess a source file
-src/Modules/Console.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Console.dir\build.make CMakeFiles/Console.dir/src/Modules/Console.cpp.i
-.PHONY : src/Modules/Console.cpp.i
+src/Modules/src/Console.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Modules/src/Console.cpp.i
+.PHONY : src/Modules/src/Console.cpp.i
 
-src/Modules/Console.s: src/Modules/Console.cpp.s
-.PHONY : src/Modules/Console.s
+src/Modules/src/Console.s: src/Modules/src/Console.cpp.s
+.PHONY : src/Modules/src/Console.s
 
 # target to generate assembly for a file
-src/Modules/Console.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Console.dir\build.make CMakeFiles/Console.dir/src/Modules/Console.cpp.s
-.PHONY : src/Modules/Console.cpp.s
+src/Modules/src/Console.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Modules/src/Console.cpp.s
+.PHONY : src/Modules/src/Console.cpp.s
 
-src/Modules/Drone.obj: src/Modules/Drone.cpp.obj
-.PHONY : src/Modules/Drone.obj
+src/Modules/src/Drone.obj: src/Modules/src/Drone.cpp.obj
+.PHONY : src/Modules/src/Drone.obj
 
 # target to build an object file
-src/Modules/Drone.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Drone.dir\build.make CMakeFiles/Drone.dir/src/Modules/Drone.cpp.obj
-.PHONY : src/Modules/Drone.cpp.obj
+src/Modules/src/Drone.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj
+.PHONY : src/Modules/src/Drone.cpp.obj
 
-src/Modules/Drone.i: src/Modules/Drone.cpp.i
-.PHONY : src/Modules/Drone.i
+src/Modules/src/Drone.i: src/Modules/src/Drone.cpp.i
+.PHONY : src/Modules/src/Drone.i
 
 # target to preprocess a source file
-src/Modules/Drone.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Drone.dir\build.make CMakeFiles/Drone.dir/src/Modules/Drone.cpp.i
-.PHONY : src/Modules/Drone.cpp.i
+src/Modules/src/Drone.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Modules/src/Drone.cpp.i
+.PHONY : src/Modules/src/Drone.cpp.i
 
-src/Modules/Drone.s: src/Modules/Drone.cpp.s
-.PHONY : src/Modules/Drone.s
+src/Modules/src/Drone.s: src/Modules/src/Drone.cpp.s
+.PHONY : src/Modules/src/Drone.s
 
 # target to generate assembly for a file
-src/Modules/Drone.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Drone.dir\build.make CMakeFiles/Drone.dir/src/Modules/Drone.cpp.s
-.PHONY : src/Modules/Drone.cpp.s
+src/Modules/src/Drone.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Modules/src/Drone.cpp.s
+.PHONY : src/Modules/src/Drone.cpp.s
 
-src/Modules/Map.obj: src/Modules/Map.cpp.obj
-.PHONY : src/Modules/Map.obj
+src/Modules/src/Map.obj: src/Modules/src/Map.cpp.obj
+.PHONY : src/Modules/src/Map.obj
 
 # target to build an object file
-src/Modules/Map.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Map.dir\build.make CMakeFiles/Map.dir/src/Modules/Map.cpp.obj
-.PHONY : src/Modules/Map.cpp.obj
+src/Modules/src/Map.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj
+.PHONY : src/Modules/src/Map.cpp.obj
 
-src/Modules/Map.i: src/Modules/Map.cpp.i
-.PHONY : src/Modules/Map.i
+src/Modules/src/Map.i: src/Modules/src/Map.cpp.i
+.PHONY : src/Modules/src/Map.i
 
 # target to preprocess a source file
-src/Modules/Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Map.dir\build.make CMakeFiles/Map.dir/src/Modules/Map.cpp.i
-.PHONY : src/Modules/Map.cpp.i
+src/Modules/src/Map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Modules/src/Map.cpp.i
+.PHONY : src/Modules/src/Map.cpp.i
 
-src/Modules/Map.s: src/Modules/Map.cpp.s
-.PHONY : src/Modules/Map.s
+src/Modules/src/Map.s: src/Modules/src/Map.cpp.s
+.PHONY : src/Modules/src/Map.s
 
 # target to generate assembly for a file
-src/Modules/Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Map.dir\build.make CMakeFiles/Map.dir/src/Modules/Map.cpp.s
-.PHONY : src/Modules/Map.cpp.s
+src/Modules/src/Map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Modules/src/Map.cpp.s
+.PHONY : src/Modules/src/Map.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -696,19 +657,16 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
-	@echo ... Console
-	@echo ... Drone
-	@echo ... Map
 	@echo ... main
-	@echo ... src/Modules/Console.obj
-	@echo ... src/Modules/Console.i
-	@echo ... src/Modules/Console.s
-	@echo ... src/Modules/Drone.obj
-	@echo ... src/Modules/Drone.i
-	@echo ... src/Modules/Drone.s
-	@echo ... src/Modules/Map.obj
-	@echo ... src/Modules/Map.i
-	@echo ... src/Modules/Map.s
+	@echo ... src/Modules/src/Console.obj
+	@echo ... src/Modules/src/Console.i
+	@echo ... src/Modules/src/Console.s
+	@echo ... src/Modules/src/Drone.obj
+	@echo ... src/Modules/src/Drone.i
+	@echo ... src/Modules/src/Drone.s
+	@echo ... src/Modules/src/Map.obj
+	@echo ... src/Modules/src/Map.i
+	@echo ... src/Modules/src/Map.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
