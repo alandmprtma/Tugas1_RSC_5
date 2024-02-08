@@ -1,2 +1,0 @@
-C:\msys64\ucrt64\bin\ar.exe qc libConsole.a CMakeFiles/Console.dir/src/Modules/Console.cpp.obj
-C:\msys64\ucrt64\bin\ranlib.exe libConsole.a
