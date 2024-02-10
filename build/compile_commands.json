@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/aland/Desktop/Tugas1_RSC_5/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\src\\Modules\\src\\Map.cpp.obj -c C:\\Users\\aland\\Desktop\\Tugas1_RSC_5\\src\\Modules\\src\\Map.cpp",
+  "file": "C:/Users/aland/Desktop/Tugas1_RSC_5/src/Modules/src/Map.cpp",
+  "output": "CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj"
+},
+{
+  "directory": "C:/Users/aland/Desktop/Tugas1_RSC_5/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\src\\Modules\\src\\Drone.cpp.obj -c C:\\Users\\aland\\Desktop\\Tugas1_RSC_5\\src\\Modules\\src\\Drone.cpp",
+  "file": "C:/Users/aland/Desktop/Tugas1_RSC_5/src/Modules/src/Drone.cpp",
+  "output": "CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj"
+},
+{
+  "directory": "C:/Users/aland/Desktop/Tugas1_RSC_5/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\src\\Modules\\src\\Console.cpp.obj -c C:\\Users\\aland\\Desktop\\Tugas1_RSC_5\\src\\Modules\\src\\Console.cpp",
+  "file": "C:/Users/aland/Desktop/Tugas1_RSC_5/src/Modules/src/Console.cpp",
+  "output": "CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj"
+},
+{
+  "directory": "C:/Users/aland/Desktop/Tugas1_RSC_5/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c C:\\Users\\aland\\Desktop\\Tugas1_RSC_5\\src\\main.cpp",
+  "file": "C:/Users/aland/Desktop/Tugas1_RSC_5/src/main.cpp",
+  "output": "CMakeFiles/main.dir/src/main.cpp.obj"
+}
+]
