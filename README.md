@@ -38,16 +38,19 @@ This project aims to introduce Object-Oriented Programming (OOP) concepts throug
 |---|---|
 | Aland Mulia Pratama | 13522124 |
 | Radityo Ockta Primadhi | 16923002 |
-| Maghryza Milchan Fayumi | 1652311 |
+| Maghryza Milchan Fayumi | 16523111 |
 | Karol Yangqian Poetracahya | 19623206 |
 ## 📀 Features
+### Drone VTOL
 
+### Batter
 ## 🗂️ Program Structures
 
 ## 🛠️ How to Use
 
 ### 🏋 Dependencies
-
+- C++ Programming Language
+- CMake Configure
 ### 🔧 Instalation
 
 ### 🏃‍♂️ Program Execution
