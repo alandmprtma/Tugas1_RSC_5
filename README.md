@@ -6,30 +6,30 @@
 # Tugas1_RSC_5
 > Permainan Drone dengan Konsep Object Oriented Programming (OOP)
 ## 📑 Table of Contents
-  - [Deskripsi Singkat](#🖥️-deskripsi-singkat)
-  - [Uji Coba Program](#🦾-Uji-Coba-Program)
-  - [Identitas Pembuat Program](#🪪-identitas-pembuat-program)
-  - [Fitur Program](#📀-fitur-program)
-  - [Struktur Program](#🗂️-struktur-program)
-  - [Cara Menggunakan](#🛠️-cara-menggunakan)
-    - [Dependensi](#🏋-dependensi)
-    - [Instalasi](#🔧-instalasi)
-    - [Eksekusi Program](#🏃‍♂️-eksekusi-program)
+  - [Descriptions](#🖥️-descriptions)
+  - [Screenshots](#🦾-Uji-Coba-Program)
+  - [Contributors](#🪪-identitas-pembuat-program)
+  - [Features](#📀-fitur-program)
+  - [Program Structures](#🗂️-struktur-program)
+  - [How to Use](#🛠️-cara-menggunakan)
+    - [Dependencies](#🏋-dependensi)
+    - [Instalation](#🔧-instalasi)
+    - [Program Execution](#🏃‍♂️-eksekusi-program)
 
-## 🖥️ Deskripsi Singkat
+## 🖥️ Descriptions
 
-## 🦾 Uji Coba Program
+## 📸 Screenshots
 
-## 🪪 Identitas Pembuat Program
+## 🪪 Contributors
 
-## 📀 Fitur Program
+## 📀 Features
 
-## 🗂️ Struktur Program
+## 🗂️ Program Structures
 
-## 🛠️ Cara Menggunakan
+## 🛠️ How to Use
 
-### 🏋 Dependensi
+### 🏋 Dependencies
 
-### 🔧 Instalasi
+### 🔧 Instalation
 
-### 🏃‍♂️ Eksekusi Program
+### 🏃‍♂️ Program Execution
