@@ -6,15 +6,15 @@
 # Tugas1_RSC_5
 > Permainan Drone dengan Konsep Object Oriented Programming (OOP)
 ## 📑 Table of Contents
-  - [Descriptions](#🖥️-descriptions)
-  - [Screenshots](#🦾-Uji-Coba-Program)
-  - [Contributors](#🪪-identitas-pembuat-program)
-  - [Features](#📀-fitur-program)
-  - [Program Structures](#🗂️-struktur-program)
-  - [How to Use](#🛠️-cara-menggunakan)
-    - [Dependencies](#🏋-dependensi)
-    - [Instalation](#🔧-instalasi)
-    - [Program Execution](#🏃‍♂️-eksekusi-program)
+  - [Descriptions](#%EF%B8%8F-descriptions)
+  - [Screenshots](#-screenshots)
+  - [Contributors](#-contributors)
+  - [Features](#-features)
+  - [Program Structures](#%EF%B8%8F-program-structures)
+  - [How to Use](#%EF%B8%8F-how-to-use)
+    - [Dependencies](#-dependencies)
+    - [Instalation](#-instalation)
+    - [Program Execution](#%EF%B8%8F-program-execution)
 
 ## 🖥️ Descriptions
 
