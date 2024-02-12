@@ -1,6 +1,7 @@
 #include "Map.h"
 #include "Drone.h"
 
+// constructor
 Map::Map(Drone drone) 
 : data(5, vector<char>(5, '-')), base(data)
 {
@@ -8,6 +9,7 @@ Map::Map(Drone drone)
     data[this->drone.getXPos()][this->drone.getYPos()] = 'D';
 }
 
+// constructor
 Map::Map()
 : data(5, vector<char>(5, '-')), base(data)
 {
@@ -17,6 +19,7 @@ Map::Map()
 
 }
 
+// destructor
 Map::~Map() 
 {
 }
