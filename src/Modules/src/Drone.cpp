@@ -121,3 +121,81 @@ void Drone::showPose()
 {
     std::cout << "Your drone is located at (" << this->getXPos() << ", " << this->getYPos() << ")" << std::endl;
 }
+
+void Drone::generateObstacle()
+{
+
+}
+
+void Drone::autonomous()
+{
+    std::cout << "Autonomous On!" << std::endl;
+    std::cout << "Target: " << std::endl;
+    int x, y;
+    std::cout << "> x: ";
+    std::cin >> x;
+    std::cout << "> y: ";
+    std::cin >> y;
+    if (x < 0 || x > 4 || y < 0 || y > 4)
+    {
+        std::cout << "Invalid target!" << std::endl;
+        return;
+    }
+    else
+    {
+        if (this->getLandingStatus() == true)
+        {
+            std::cout << "Drone is on land, Please take-off first!" << std::endl;
+            return;
+        }
+        else
+        {
+            if (this->getBatteryLevel() < abs(this->getXPos()- x) + abs(this->getYPos() - y)){
+                std::cout << "Battery not enough, Please recharge!" << std::endl;
+                return;
+            }
+            else{
+                char matrix[5][5];
+                    for (int i = 0; i < 5; ++i) {
+                    for (int j = 0; j < 5; ++j) {
+                        matrix[i][j] = '-';
+                    }
+                }
+                int Xpos = this->getXPos();
+                int Ypos = this->getYPos();
+                if (this->getXPos() > x){
+                    while (Xpos != x){
+                        Xpos--;
+                        matrix[Xpos][Ypos] = 'x';
+
+                    }
+                } else if (Xpos < x){
+                    while (Xpos != x){
+                        Xpos++;
+                        matrix[Xpos][Ypos] = 'x';
+                    }
+                }
+                if (Ypos > y){
+                    while (Ypos != y){
+                        Ypos--;
+                        matrix[Xpos][Ypos] = 'x';
+                    }
+                } else if (Ypos < y){
+                    while (Ypos != y){
+                        Ypos++;
+                        matrix[Xpos][Ypos] = 'x';
+                    }
+                }
+                matrix[x][y] = 'D';
+                for (int i = 0; i < 5; ++i) {
+                    for (int j = 0; j < 5; ++j) {
+                        std::cout << matrix[i][j] << " ";
+                    }
+                    std::cout << std::endl;
+                }
+                std::cout << "Your drone is located at ("<< x << ", "<< y << ")." << std::endl;
+                return;
+            }
+        }
+    }
+}

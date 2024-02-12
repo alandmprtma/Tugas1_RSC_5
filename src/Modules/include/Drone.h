@@ -34,6 +34,8 @@ void moveLeft();
 void moveDown();
 void rechargeBattery();
 void showPose();
+void generateObstacle();
+void autonomous();
 
 };
 

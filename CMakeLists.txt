@@ -9,6 +9,7 @@ set(SRC_FILES
     ${PROJECT_SOURCE_DIR}/src/Modules/src/Map.cpp
     ${PROJECT_SOURCE_DIR}/src/Modules/src/Drone.cpp
     ${PROJECT_SOURCE_DIR}/src/Modules/src/Console.cpp
+    ${PROJECT_SOURCE_DIR}/src/Modules/src/AStar.cpp
     ${PROJECT_SOURCE_DIR}/src/main.cpp
 )
 
