@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj"
+  "CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj.d"
   "CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj"
   "CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj.d"
   "CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj"

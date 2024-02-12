@@ -1,6 +1,6 @@
-C:/Users/aland/Desktop/Tugas1_RSC_5/build/CMakeFiles/main.dir
-C:/Users/aland/Desktop/Tugas1_RSC_5/build/CMakeFiles/package.dir
-C:/Users/aland/Desktop/Tugas1_RSC_5/build/CMakeFiles/package_source.dir
-C:/Users/aland/Desktop/Tugas1_RSC_5/build/CMakeFiles/test.dir
-C:/Users/aland/Desktop/Tugas1_RSC_5/build/CMakeFiles/edit_cache.dir
-C:/Users/aland/Desktop/Tugas1_RSC_5/build/CMakeFiles/rebuild_cache.dir
+C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/main.dir
+C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/package.dir
+C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/package_source.dir
+C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/test.dir
+C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/edit_cache.dir
+C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CMakeFiles/rebuild_cache.dir

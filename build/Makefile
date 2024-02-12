@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\aland\Desktop\Tugas1_RSC_5
+CMAKE_SOURCE_DIR = "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\aland\Desktop\Tugas1_RSC_5\build
+CMAKE_BINARY_DIR = "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/aland/Desktop/Tugas1_RSC_5/build/CPackSourceConfig.cmake
+	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build/CPackSourceConfig.cmake"
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -116,9 +116,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aland\Desktop\Tugas1_RSC_5\build\CMakeFiles C:\Users\aland\Desktop\Tugas1_RSC_5\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\build\CMakeFiles" "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\build\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aland\Desktop\Tugas1_RSC_5\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\build\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -157,6 +157,30 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+src/Modules/src/AStar.obj: src/Modules/src/AStar.cpp.obj
+.PHONY : src/Modules/src/AStar.obj
+
+# target to build an object file
+src/Modules/src/AStar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj
+.PHONY : src/Modules/src/AStar.cpp.obj
+
+src/Modules/src/AStar.i: src/Modules/src/AStar.cpp.i
+.PHONY : src/Modules/src/AStar.i
+
+# target to preprocess a source file
+src/Modules/src/AStar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Modules/src/AStar.cpp.i
+.PHONY : src/Modules/src/AStar.cpp.i
+
+src/Modules/src/AStar.s: src/Modules/src/AStar.cpp.s
+.PHONY : src/Modules/src/AStar.s
+
+# target to generate assembly for a file
+src/Modules/src/AStar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Modules/src/AStar.cpp.s
+.PHONY : src/Modules/src/AStar.cpp.s
 
 src/Modules/src/Console.obj: src/Modules/src/Console.cpp.obj
 .PHONY : src/Modules/src/Console.obj
@@ -266,6 +290,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... main
+	@echo ... src/Modules/src/AStar.obj
+	@echo ... src/Modules/src/AStar.i
+	@echo ... src/Modules/src/AStar.s
 	@echo ... src/Modules/src/Console.obj
 	@echo ... src/Modules/src/Console.i
 	@echo ... src/Modules/src/Console.s

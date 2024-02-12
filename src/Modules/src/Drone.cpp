@@ -1,6 +1,7 @@
 #include "Drone.h"
 #include <iostream>
 #include <string>
+#include "AStar.h"
 
 Drone::Drone(int x_pos, int y_pos)
     : x{x_pos}, y{y_pos}, battery{10}, onLand{true} 
@@ -18,6 +19,7 @@ int Drone::getXPos() const {return this->x;}
 int Drone::getYPos() const {return this->y;}
 int Drone::getBatteryLevel() const {return this->battery;}
 bool Drone::getLandingStatus() const {return this->onLand;}
+AStar::CoordinateList Drone::getTrail() const {return this->trail;}
 
 //Methods
 void Drone::takeOff()
@@ -119,5 +121,60 @@ void Drone::rechargeBattery()
 
 void Drone::showPose()
 {
-    std::cout << "Your drone is located at (" << this->getXPos() << ", " << this->getYPos() << ")" << std::endl;
+    std::cout << "Your drone is located at (" << this->getYPos() << ", " << this->getXPos() << ")" << std::endl;
 }
+
+void Drone::searchTarget(AStar::Generator generator, AStar::Vec2i target)
+{
+    AStar::Vec2i source;
+    source = {this->getXPos(), this->getYPos()};
+    AStar::CoordinateList path = generator.findPath(source, target);
+    path.erase(path.begin());
+    this->trail = path;
+}
+
+void Drone::autonomous(AStar::Generator generator)
+{
+    std::cout << "Autonomous On!" << std::endl;
+    std::cout << "Target: " << std::endl;
+    int x, y;
+    std::cout << "> x: ";
+    std::cin >> y;
+    std::cout << "> y: ";
+    std::cin >> x;
+    if (x < 0 || x > 4 || y < 0 || y > 4)
+    {
+        std::cout << "Invalid target!" << std::endl;
+        return;
+    }
+    else
+    {
+        if (this->getLandingStatus() == true)
+        {
+            std::cout << "Drone is on land, Please take-off first!" << std::endl;
+            return;
+        }
+        else
+        {
+            if (this->getBatteryLevel() < abs(this->getXPos()- x) + abs(this->getYPos() - y)){
+                std::cout << "Battery not enough, Please recharge!" << std::endl;
+                return;
+            }
+            else{
+                AStar::Vec2i target = {x, y};
+                this->searchTarget(generator, target);
+                if (this->trail[0].x != target.x && this->trail[0].y != target.y)
+                {
+                    std::cout << "Cannot find path" << std::endl;
+                    this->trail.clear();
+                }
+                else
+                {
+                    this->x = target.x;
+                    this->y = target.y;
+                }
+            }
+        }
+    }
+}
+

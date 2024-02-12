@@ -24,7 +24,7 @@ Console::~Console()
 {
 }
 
-vector<string> Console::commands = {"takeoff", "landing", "status", "move", "recharge", "autonomous", "quit"};
+vector<string> Console::commands = {"takeoff", "landing", "status", "move", "recharge", "autonomous", "generateobstacles", "quit"};
 
 void Console::showCommands()
 {
@@ -86,6 +86,7 @@ void Console::run()
         char input = ' ';
         while (input != 'q')
         {
+            drone = this->map.getDrone();
             this->map.printMap();
             cout << 
             "Press q to stop moving\n"
@@ -122,84 +123,25 @@ void Console::run()
         system("cls");
 
     }
-    else if (command == "autonomous")
-    {
-        system("cls");
-        cout << "Autonomous On!" << endl;
-        cout << "Target: " << endl;
-        int x, y;
-        cout << "> x: ";
-        cin >> x;
-        cout << "> y: ";
-        cin >> y;
-        if (x < 0 || x > 4 || y < 0 || y > 4)
-        {
-            cout << "Invalid target!" << endl;
-            return;
-        }
-        else
-        {
-            if (drone.getLandingStatus() == true)
-            {
-                cout << "Drone is on land, Please take-off first!" << endl;
-                return;
-            }
-            else
-            {
-                if (drone.getBatteryLevel() < abs(drone.getXPos()- x) + abs(drone.getYPos() - y)){
-                    std::cout << "Battery not enough, Please recharge!" << std::endl;
-                    return;
-                }
-                else{
-                    char matrix[5][5];
-                     for (int i = 0; i < 5; ++i) {
-                        for (int j = 0; j < 5; ++j) {
-                            matrix[i][j] = '-';
-                        }
-                    }
-                    int Xpos = drone.getXPos();
-                    int Ypos = drone.getYPos();
-                    if (drone.getXPos() > x){
-                        while (Xpos != x){
-                            Xpos--;
-                            matrix[Xpos][Ypos] = 'x';
-
-                        }
-                    } else if (Xpos < x){
-                        while (Xpos != x){
-                            Xpos++;
-                            matrix[Xpos][Ypos] = 'x';
-                        }
-                    }
-                    if (Ypos > y){
-                        while (Ypos != y){
-                            Ypos--;
-                            matrix[Xpos][Ypos] = 'x';
-                        }
-                    } else if (Ypos < y){
-                        while (Ypos != y){
-                            Ypos++;
-                            matrix[Xpos][Ypos] = 'x';
-                        }
-                    }
-                    matrix[x][y] = 'D';
-                    for (int i = 0; i < 5; ++i) {
-                        for (int j = 0; j < 5; ++j) {
-                            std::cout << matrix[i][j] << " ";
-                        }
-                        std::cout << std::endl;
-                    }
-                    std::cout << "Your drone is located at ("<< x << ", "<< y << ")." << std::endl;
-                    return;
-                }
-            }
-        }
-    }
     else if (command == "recharge")
     {
         system("cls");
         drone.rechargeBattery();
     }
+    else if (command == "autonomous")
+    {
+        system("cls");
+        drone.autonomous(this->map.getGenerator());
+        this->map.mountDrone(drone);
+        this->map.printMap();
+    }
+    else if (command == "generateobstacles")
+    {
+        system("cls");
+        this->map.generateRandomObstacles();
+        this->map.printMap();
+    }
+    
     else
     {
         system("cls");

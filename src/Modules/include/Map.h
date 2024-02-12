@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include "Drone.h"
+#include "AStar.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ class Map {
         vector<vector<char>> data;
         vector<vector<char>> base;
         Drone drone;
+        AStar::Generator generator;
     public:
         // constructor
         Map(Drone drone);
@@ -36,16 +38,23 @@ class Map {
         void moveRight();
         void moveDown();
         void moveLeft();
-
-        // Get Drone
-        Drone getDrone();
-
+        
         // Mount drone
         void mountDrone(Drone drone);
+        
+        // Generate obstacles
+        void generateRandomObstacles();
+
+        // Get Drone
+        Drone getDrone() const;
 
         // getter location (X,Y)
-        int getLocationX();
-        int getLocationY();
+        int getLocationX() const;
+        int getLocationY() const;
+
+        // Get generator
+        AStar::Generator getGenerator() const;
+
 
 };
 #endif
