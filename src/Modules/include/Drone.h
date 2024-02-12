@@ -38,6 +38,7 @@ void rechargeBattery();
 void showPose();
 void searchTarget(AStar::Generator generator, AStar::Vec2i target);
 void autonomous(AStar::Generator generator);
+void clearTrail();
 
 };
 

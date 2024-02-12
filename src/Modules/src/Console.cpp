@@ -46,7 +46,7 @@ void Console::run()
     string command;
     cin >> command;
 
-    if (command == "quit")
+    if (command == "quit" || command == "8")
     {
         system("cls");
         exit(0);
@@ -54,17 +54,17 @@ void Console::run()
 
     Drone drone = this->map.getDrone();
     
-    if (command == "takeoff")
+    if (command == "takeoff" || command == "1")
     {
         system("cls");
         drone.takeOff();
     }
-    else if (command == "landing")
+    else if (command == "landing" || command == "2")
     {
         system("cls");
         drone.landing();
     }
-    else if (command == "status")
+    else if (command == "status" || command == "3")
     {
         system("cls");
         if (drone.getLandingStatus())
@@ -80,7 +80,7 @@ void Console::run()
             "Battery: " << drone.getBatteryLevel() << endl;
         }   
     }
-    else if (command == "move")
+    else if (command == "move" || command == "4")
     {
         system("cls");
         char input = ' ';
@@ -123,19 +123,20 @@ void Console::run()
         system("cls");
 
     }
-    else if (command == "recharge")
+    else if (command == "recharge" || command == "5")
     {
         system("cls");
         drone.rechargeBattery();
     }
-    else if (command == "autonomous")
+    else if (command == "autonomous" || command == "6")
     {
         system("cls");
         drone.autonomous(this->map.getGenerator());
         this->map.mountDrone(drone);
         this->map.printMap();
+        drone.clearTrail();
     }
-    else if (command == "generateobstacles")
+    else if (command == "generateobstacles" || command == "7")
     {
         system("cls");
         this->map.generateRandomObstacles();

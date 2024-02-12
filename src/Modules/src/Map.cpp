@@ -51,7 +51,6 @@ void Map::printMap()
     this->drone.showPose();
     cout << "Battery: " << this->drone.getBatteryLevel() << endl;
     cout << endl;
-    this->refresh();
 }
 
 void Map::printBase() 

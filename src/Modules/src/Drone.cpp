@@ -145,20 +145,17 @@ void Drone::autonomous(AStar::Generator generator)
     if (x < 0 || x > 4 || y < 0 || y > 4)
     {
         std::cout << "Invalid target!" << std::endl;
-        return;
     }
     else
     {
         if (this->getLandingStatus() == true)
         {
             std::cout << "Drone is on land, Please take-off first!" << std::endl;
-            return;
         }
         else
         {
             if (this->getBatteryLevel() < abs(this->getXPos()- x) + abs(this->getYPos() - y)){
                 std::cout << "Battery not enough, Please recharge!" << std::endl;
-                return;
             }
             else{
                 AStar::Vec2i target = {x, y};
@@ -172,9 +169,17 @@ void Drone::autonomous(AStar::Generator generator)
                 {
                     this->x = target.x;
                     this->y = target.y;
+                    this->battery -= this->trail.size();
+                    if (this->battery == 0)
+                    {
+                        std::cout << "Out of battery. Initiating landing." << std::endl;
+                        this->landing();
+                    }
                 }
             }
         }
     }
 }
+
+void Drone::clearTrail() {this->trail.clear();}
 
