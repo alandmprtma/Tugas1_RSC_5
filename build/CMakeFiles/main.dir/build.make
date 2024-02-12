@@ -68,11 +68,26 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
+CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
+CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj: C:/Users/karol/OneDrive\ -\ Institut\ Teknologi\ Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/Modules/src/AStar.cpp
+CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj -MF CMakeFiles\main.dir\src\Modules\src\AStar.cpp.obj.d -o CMakeFiles\main.dir\src\Modules\src\AStar.cpp.obj -c "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\src\Modules\src\AStar.cpp"
+
+CMakeFiles/main.dir/src/Modules/src/AStar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Modules/src/AStar.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\src\Modules\src\AStar.cpp" > CMakeFiles\main.dir\src\Modules\src\AStar.cpp.i
+
+CMakeFiles/main.dir/src/Modules/src/AStar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Modules/src/AStar.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\src\Modules\src\AStar.cpp" -o CMakeFiles\main.dir\src\Modules\src\AStar.cpp.s
+
 CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj: C:/Users/karol/OneDrive\ -\ Institut\ Teknologi\ Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/Modules/src/Map.cpp
 CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj -MF CMakeFiles\main.dir\src\Modules\src\Map.cpp.obj.d -o CMakeFiles\main.dir\src\Modules\src\Map.cpp.obj -c "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\src\Modules\src\Map.cpp"
 
 CMakeFiles/main.dir/src/Modules/src/Map.cpp.i: cmake_force
@@ -87,7 +102,7 @@ CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj: CMakeFiles/main.dir/flags.mak
 CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj: C:/Users/karol/OneDrive\ -\ Institut\ Teknologi\ Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/Modules/src/Drone.cpp
 CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj -MF CMakeFiles\main.dir\src\Modules\src\Drone.cpp.obj.d -o CMakeFiles\main.dir\src\Modules\src\Drone.cpp.obj -c "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\src\Modules\src\Drone.cpp"
 
 CMakeFiles/main.dir/src/Modules/src/Drone.cpp.i: cmake_force
@@ -102,7 +117,7 @@ CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj: CMakeFiles/main.dir/flags.m
 CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj: C:/Users/karol/OneDrive\ -\ Institut\ Teknologi\ Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/Modules/src/Console.cpp
 CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj -MF CMakeFiles\main.dir\src\Modules\src\Console.cpp.obj.d -o CMakeFiles\main.dir\src\Modules\src\Console.cpp.obj -c "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\src\Modules\src\Console.cpp"
 
 CMakeFiles/main.dir/src/Modules/src/Console.cpp.i: cmake_force
@@ -112,21 +127,6 @@ CMakeFiles/main.dir/src/Modules/src/Console.cpp.i: cmake_force
 CMakeFiles/main.dir/src/Modules/src/Console.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Modules/src/Console.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\src\Modules\src\Console.cpp" -o CMakeFiles\main.dir\src\Modules\src\Console.cpp.s
-
-CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
-CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj: C:/Users/karol/OneDrive\ -\ Institut\ Teknologi\ Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/Modules/src/AStar.cpp
-CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj -MF CMakeFiles\main.dir\src\Modules\src\AStar.cpp.obj.d -o CMakeFiles\main.dir\src\Modules\src\AStar.cpp.obj -c "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\src\Modules\src\AStar.cpp"
-
-CMakeFiles/main.dir/src/Modules/src/AStar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Modules/src/AStar.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\src\Modules\src\AStar.cpp" > CMakeFiles\main.dir\src\Modules\src\AStar.cpp.i
-
-CMakeFiles/main.dir/src/Modules/src/AStar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Modules/src/AStar.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\karol\OneDrive - Institut Teknologi Bandung\Stuffs\Aksantara\Repositories\Tugas1_RSC_5\src\Modules\src\AStar.cpp" -o CMakeFiles\main.dir\src\Modules\src\AStar.cpp.s
 
 CMakeFiles/main.dir/src/main.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
@@ -145,19 +145,19 @@ CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 
 # Object files for target main
 main_OBJECTS = \
+"CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj" \
 "CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj" \
 "CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj" \
 "CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj" \
-"CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj" \
 "CMakeFiles/main.dir/src/main.cpp.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
+main.exe: CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj
 main.exe: CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj
 main.exe: CMakeFiles/main.dir/src/Modules/src/Drone.cpp.obj
 main.exe: CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj
-main.exe: CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj
 main.exe: CMakeFiles/main.dir/src/main.cpp.obj
 main.exe: CMakeFiles/main.dir/build.make
 main.exe: CMakeFiles/main.dir/linkLibs.rsp

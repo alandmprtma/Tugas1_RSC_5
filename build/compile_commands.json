@@ -1,6 +1,12 @@
 [
 {
   "directory": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\src\\Modules\\src\\AStar.cpp.obj -c \"C:\\Users\\karol\\OneDrive - Institut Teknologi Bandung\\Stuffs\\Aksantara\\Repositories\\Tugas1_RSC_5\\src\\Modules\\src\\AStar.cpp\"",
+  "file": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/Modules/src/AStar.cpp",
+  "output": "CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj"
+},
+{
+  "directory": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\src\\Modules\\src\\Map.cpp.obj -c \"C:\\Users\\karol\\OneDrive - Institut Teknologi Bandung\\Stuffs\\Aksantara\\Repositories\\Tugas1_RSC_5\\src\\Modules\\src\\Map.cpp\"",
   "file": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/Modules/src/Map.cpp",
   "output": "CMakeFiles/main.dir/src/Modules/src/Map.cpp.obj"
@@ -16,12 +22,6 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\src\\Modules\\src\\Console.cpp.obj -c \"C:\\Users\\karol\\OneDrive - Institut Teknologi Bandung\\Stuffs\\Aksantara\\Repositories\\Tugas1_RSC_5\\src\\Modules\\src\\Console.cpp\"",
   "file": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/Modules/src/Console.cpp",
   "output": "CMakeFiles/main.dir/src/Modules/src/Console.cpp.obj"
-},
-{
-  "directory": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\src\\Modules\\src\\AStar.cpp.obj -c \"C:\\Users\\karol\\OneDrive - Institut Teknologi Bandung\\Stuffs\\Aksantara\\Repositories\\Tugas1_RSC_5\\src\\Modules\\src\\AStar.cpp\"",
-  "file": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/src/Modules/src/AStar.cpp",
-  "output": "CMakeFiles/main.dir/src/Modules/src/AStar.cpp.obj"
 },
 {
   "directory": "C:/Users/karol/OneDrive - Institut Teknologi Bandung/Stuffs/Aksantara/Repositories/Tugas1_RSC_5/build",

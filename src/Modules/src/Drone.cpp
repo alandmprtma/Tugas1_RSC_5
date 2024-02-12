@@ -1,6 +1,7 @@
 #include "Drone.h"
 #include <iostream>
 #include <string>
+#include "AStar.h"
 
 Drone::Drone(int x_pos, int y_pos)
     : x{x_pos}, y{y_pos}, battery{10}, onLand{true} 
@@ -18,6 +19,7 @@ int Drone::getXPos() const {return this->x;}
 int Drone::getYPos() const {return this->y;}
 int Drone::getBatteryLevel() const {return this->battery;}
 bool Drone::getLandingStatus() const {return this->onLand;}
+AStar::CoordinateList Drone::getTrail() const {return this->trail;}
 
 //Methods
 void Drone::takeOff()
@@ -119,23 +121,27 @@ void Drone::rechargeBattery()
 
 void Drone::showPose()
 {
-    std::cout << "Your drone is located at (" << this->getXPos() << ", " << this->getYPos() << ")" << std::endl;
+    std::cout << "Your drone is located at (" << this->getYPos() << ", " << this->getXPos() << ")" << std::endl;
 }
 
-void Drone::generateObstacle()
+void Drone::searchTarget(AStar::Generator generator, AStar::Vec2i target)
 {
-
+    AStar::Vec2i source;
+    source = {this->getXPos(), this->getYPos()};
+    AStar::CoordinateList path = generator.findPath(source, target);
+    path.erase(path.begin());
+    this->trail = path;
 }
 
-void Drone::autonomous()
+void Drone::autonomous(AStar::Generator generator)
 {
     std::cout << "Autonomous On!" << std::endl;
     std::cout << "Target: " << std::endl;
     int x, y;
     std::cout << "> x: ";
-    std::cin >> x;
-    std::cout << "> y: ";
     std::cin >> y;
+    std::cout << "> y: ";
+    std::cin >> x;
     if (x < 0 || x > 4 || y < 0 || y > 4)
     {
         std::cout << "Invalid target!" << std::endl;
@@ -155,47 +161,20 @@ void Drone::autonomous()
                 return;
             }
             else{
-                char matrix[5][5];
-                    for (int i = 0; i < 5; ++i) {
-                    for (int j = 0; j < 5; ++j) {
-                        matrix[i][j] = '-';
-                    }
+                AStar::Vec2i target = {x, y};
+                this->searchTarget(generator, target);
+                if (this->trail[0].x != target.x && this->trail[0].y != target.y)
+                {
+                    std::cout << "Cannot find path" << std::endl;
+                    this->trail.clear();
                 }
-                int Xpos = this->getXPos();
-                int Ypos = this->getYPos();
-                if (this->getXPos() > x){
-                    while (Xpos != x){
-                        Xpos--;
-                        matrix[Xpos][Ypos] = 'x';
-
-                    }
-                } else if (Xpos < x){
-                    while (Xpos != x){
-                        Xpos++;
-                        matrix[Xpos][Ypos] = 'x';
-                    }
+                else
+                {
+                    this->x = target.x;
+                    this->y = target.y;
                 }
-                if (Ypos > y){
-                    while (Ypos != y){
-                        Ypos--;
-                        matrix[Xpos][Ypos] = 'x';
-                    }
-                } else if (Ypos < y){
-                    while (Ypos != y){
-                        Ypos++;
-                        matrix[Xpos][Ypos] = 'x';
-                    }
-                }
-                matrix[x][y] = 'D';
-                for (int i = 0; i < 5; ++i) {
-                    for (int j = 0; j < 5; ++j) {
-                        std::cout << matrix[i][j] << " ";
-                    }
-                    std::cout << std::endl;
-                }
-                std::cout << "Your drone is located at ("<< x << ", "<< y << ")." << std::endl;
-                return;
             }
         }
     }
 }
+

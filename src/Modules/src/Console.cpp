@@ -24,7 +24,7 @@ Console::~Console()
 {
 }
 
-vector<string> Console::commands = {"takeoff", "landing", "status", "move", "recharge", "autonomous", "quit"};
+vector<string> Console::commands = {"takeoff", "landing", "status", "move", "recharge", "autonomous", "generateobstacles", "quit"};
 
 void Console::showCommands()
 {
@@ -86,6 +86,7 @@ void Console::run()
         char input = ' ';
         while (input != 'q')
         {
+            drone = this->map.getDrone();
             this->map.printMap();
             cout << 
             "Press q to stop moving\n"
@@ -122,16 +123,25 @@ void Console::run()
         system("cls");
 
     }
-    else if (command == "autonomous")
-    {
-        system("cls");
-        drone.autonomous();
-    }
     else if (command == "recharge")
     {
         system("cls");
         drone.rechargeBattery();
     }
+    else if (command == "autonomous")
+    {
+        system("cls");
+        drone.autonomous(this->map.getGenerator());
+        this->map.mountDrone(drone);
+        this->map.printMap();
+    }
+    else if (command == "generateobstacles")
+    {
+        system("cls");
+        this->map.generateRandomObstacles();
+        this->map.printMap();
+    }
+    
     else
     {
         system("cls");

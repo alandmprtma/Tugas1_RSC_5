@@ -1,11 +1,18 @@
 #include "Map.h"
 #include "Drone.h"
+#include "AStar.h"
+#include <cstdlib>
 
 Map::Map(Drone drone) 
 : data(5, vector<char>(5, '-')), base(data)
 {
     this->drone = drone;
     data[this->drone.getXPos()][this->drone.getYPos()] = 'D';
+    AStar::Generator generator;
+    generator.setWorldSize({5, 5});
+    generator.setHeuristic(AStar::Heuristic::euclidean);
+    generator.setDiagonalMovement(false);
+    this->generator = generator;
 }
 
 Map::Map()
@@ -14,7 +21,11 @@ Map::Map()
     Drone drone;
     this->drone = drone;
     data[this->drone.getXPos()][this->drone.getYPos()] = 'D';
-
+    AStar::Generator generator;
+    generator.setWorldSize({5, 5});
+    generator.setHeuristic(AStar::Heuristic::euclidean);
+    generator.setDiagonalMovement(false);
+    this->generator = generator;
 }
 
 Map::~Map() 
@@ -23,7 +34,12 @@ Map::~Map()
 
 void Map::printMap() 
 {
-    for (int i = 0; i < 5; ++i) {
+    for (AStar::Vec2i& coordinate : this->drone.getTrail())
+    {
+        this->data[coordinate.x][coordinate.y] = 'X';
+    }
+    for (int i = 0; i < 5; ++i) 
+    {
         for (int j = 0; j < 5; ++j) {
             cout << this->data[i][j] << " ";
         }
@@ -32,6 +48,7 @@ void Map::printMap()
     this->drone.showPose();
     cout << "Battery: " << this->drone.getBatteryLevel() << endl;
     cout << endl;
+    this->refresh();
 }
 
 void Map::printBase() 
@@ -47,9 +64,10 @@ void Map::printBase()
 
 void Map::reset()
 {
-    vector<char> row(5, '-');
-    vector<vector<char>> mat(5, row);
-    this->data = mat;
+    vector<vector<char>> mat(5, vector<char>(5, '-'));
+    this->generator.clearCollisions();
+    this->base = mat;
+    this->data = base;
 }
 
 void Map::refresh()
@@ -58,7 +76,7 @@ void Map::refresh()
     int x, y;
     x = this->drone.getXPos();
     y = this->drone.getYPos();
-    data[x][y] = 'D';
+    this->data[x][y] = 'D';
 }
 
 void Map::moveUp() 
@@ -123,12 +141,39 @@ void Map::moveLeft()
 
 void Map::mountDrone(Drone drone)
 {
-    this->drone = drone;
+    if (this->base[drone.getXPos()][drone.getYPos()] == '-')
+    {
+        this->drone = drone;
+        this->refresh();
+    }
+    else
+    {
+        cout << "There is an obstacle!" << endl;
+    }
+    
+}
+
+void Map::generateRandomObstacles()
+{
+    srand(time(0));
+    for (int i = 0; i < this->base.size(); i++)
+    {
+        for (int j = 0; j < this->base[i].size(); j++)
+        {
+            if ((rand() % 100) > 70 && i != this->drone.getXPos() && j != this->drone.getYPos())
+            {
+                this->base[i][j] = 'O';
+                this->generator.addCollision({i, j});
+            }
+        }
+    }
     this->refresh();
 }
 
-Drone Map::getDrone() {return this->drone;}
+Drone Map::getDrone() const {return this->drone;}
 
-int Map::getLocationX() {return this->drone.getXPos();}
+int Map::getLocationX() const {return this->drone.getXPos();}
 
-int Map::getLocationY() {  return this->drone.getYPos();}
+int Map::getLocationY() const {return this->drone.getYPos();}
+
+AStar::Generator Map::getGenerator() const {return this->generator;}
