@@ -9,6 +9,7 @@ using namespace std;
 
 class Map {
     private:
+        // private attribute
         vector<vector<char>> data;
         vector<vector<char>> base;
         Drone drone;
